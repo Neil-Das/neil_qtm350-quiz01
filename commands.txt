@@ -1,0 +1,13 @@
+git clone https://github.com/Neil-Das/neil_qtm350-quiz01.git
+cd neil_qtm350-quiz01
+git branch feature-update
+git checkout feature-update
+mkdir reports
+touch reports/summary.md
+echo This document provides a summary of the project updates. >> reports/summary.md
+git add reports/
+git commit -m 'Add reports directory'
+touch reports/file{1..3}.txt
+mv data/raw-data.csv data/input-data.csv
+mkdir -p scripts/backup && cp scripts/*.py scripts/backup/
+rm docs/documentation.md
